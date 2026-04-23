@@ -1,0 +1,4 @@
+바탕화면에 압축풀기
+cd Desktop/압축 푼 폴더
+pip install -r requirements.txt
+python -m streamlit run app.py
