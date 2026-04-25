@@ -2,6 +2,21 @@ import streamlit as st
 import json
 import heapq
 
+# --- 레이아웃 및 CSS 설정 (여기가 핵심입니다!) ---
+st.set_page_config(layout="wide", page_title="OTT Simulator")
+
+st.markdown("""
+<style>
+/* 모든 버튼 안의 텍스트를 한 줄로 강제하고, 글씨를 줄입니다. */
+div[data-testid="stButton"] button p {
+    font-size: 13px !important;         /* 글씨 크기 약간 축소 */
+    white-space: nowrap !important;     /* 무조건 한 줄 고정 (줄바꿈 방지) */
+    overflow: hidden !important;        /* 칸을 넘어가는 글자 숨김 */
+    text-overflow: ellipsis !important; /* 잘린 부분은 ... 으로 자동 표시 */
+}
+</style>
+""", unsafe_allow_html=True)
+
 # --- 기본 설정 ---
 GENRE_MAP = {
     28: "액션", 12: "모험", 16: "애니메이션", 35: "코미디", 80: "범죄", 
@@ -36,19 +51,6 @@ def load_data():
         return [], {}
 
 movies, categorized_movies = load_data()
-
-# --- 💡 말줄임표 처리 함수 추가 ---
-# --- 💡 말줄임표 및 버튼 높이 강제 고정 함수 ---
-def shorten_title(text, max_len=10):
-    """제목이 길면 자르고, 짧으면 투명한 줄바꿈을 넣어 버튼 높이를 2줄로 강제 고정합니다."""
-    if len(text) > max_len:
-        return text[:max_len] + "..."
-    elif len(text) <= 8: 
-        # 8글자 이하라 1줄로 표시될 것 같은 제목들은 강제로 2줄로 만듭니다.
-        # 주의: \n 뒤에 있는 공백은 일반 띄어쓰기가 아니라 투명한 특수문자(U+3164)입니다! 절대 지우지 마세요.
-        return text + "\nㅤ" 
-    else:
-        return text
 
 # --- 상세 정보 팝업 ---
 @st.dialog("📋 콘텐츠 상세 정보", width="large")
@@ -98,8 +100,6 @@ def get_pq(user_data):
         if score > 0: heapq.heappush(pq, (-score, idx, movie))
     return pq
 
-# --- 레이아웃 ---
-st.set_page_config(layout="wide", page_title="OTT Simulator")
 
 # 사이드바
 st.sidebar.title("🎬 설정")
@@ -121,9 +121,7 @@ else:
     for m in user_data['history']:
         c_n, c_b = st.sidebar.columns([0.75, 0.25], vertical_alignment="center")
         with c_n:
-            # 사이드바는 폭이 좁으므로 12글자로 제한
-            short_t = shorten_title(m['title'], 12)
-            if st.button(f"• {short_t}", key=f"h_{m['title']}", width='stretch', help=m['title']):
+            if st.button(f"• {m['title']}", key=f"h_{m['title']}", width='stretch', help=m['title']):
                 show_details(m)
         with c_b:
             if st.button("❌", key=f"d_{m['title']}", width='stretch'):
@@ -146,12 +144,11 @@ with (col_dash if not zoom_mode else st.container()):
             # 1단: 이미지
             for i, m in enumerate(top_5):
                 with t_cols[i]: st.markdown(f"<div style='height: 160px;'><img src='{m['poster_path']}' style='width:100%; height:100%; object-fit:cover; border-radius:5px;'></div>", unsafe_allow_html=True)
-            # 2단: 제목 (말줄임표 적용)
+            # 2단: 제목 버튼 (CSS 덕분에 원래 제목 그대로 넣어도 알아서 1줄로 잘립니다)
             for i, m in enumerate(top_5):
                 with t_cols[i]:
-                    st.markdown("<div style='height: 45px; margin-top: 5px;'>", unsafe_allow_html=True) # 높이를 45px로 타이트하게 줄임
-                    short_t = shorten_title(m['title'], 8) # TOP 5는 좁으니까 8글자 제한
-                    if st.button(short_t, key=f"top_t_{i}", width='stretch', help=m['title']): show_details(m)
+                    st.markdown("<div style='margin-top: 5px;'>", unsafe_allow_html=True)
+                    if st.button(m['title'], key=f"top_t_{i}", width='stretch', help=m['title']): show_details(m)
                     st.markdown("</div>", unsafe_allow_html=True)
             # 3단: 시청 버튼
             for i, m in enumerate(top_5):
@@ -177,7 +174,8 @@ with (col_dash if not zoom_mode else st.container()):
             dot_q = 'digraph Q { node [shape=ellipse, style=filled, fillcolor="#d6eaf8"];'
             for i in range(min(15, len(pq))):
                 s, _, m = pq[i]
-                short_t = shorten_title(m['title'], 8) # 큐 안에서도 말줄임표
+                # 큐 안의 라벨도 깔끔하게 자르기 (이건 스트림릿 버튼이 아니라 그래프라 수동 처리)
+                short_t = m['title'][:8] + ".." if len(m['title']) > 8 else m['title']
                 dot_q += f'{i} [label="{-s}점\\n{short_t}"];'
                 if i > 0: dot_q += f'{(i-1)//2} -> {i};'
             dot_q += '}'
@@ -201,18 +199,18 @@ if not zoom_mode:
                 batch = display_list[r*3 : r*3+3]
                 if not batch: continue
                 cols = st.columns(3)
+                # 1단: 이미지
                 for i, m in enumerate(batch):
                     with cols[i]: st.markdown(f"<div style='height: 320px;'><img src='{m['poster_path']}' style='width:100%; height:100%; object-fit:cover; border-radius:5px;'></div>", unsafe_allow_html=True)
                 
-                # 2단: 제목 (말줄임표 적용)
+                # 2단: 제목 버튼 
                 for i, m in enumerate(batch):
                     with cols[i]:
-                        st.markdown("<div style='height: 45px; margin-top: 5px;'>", unsafe_allow_html=True) # 높이를 45px로 줄임
-                        short_t = shorten_title(m['title'], 14) # 메인은 넓으니까 14글자 제한
-                        # help 파라미터를 추가하여 마우스 오버 시 전체 제목 띄움
-                        if st.button(short_t, key=f"t_{st.session_state.genre_choice}_{r}_{i}", width='stretch', help=m['title']): show_details(m)
+                        st.markdown("<div style='margin-top: 10px;'>", unsafe_allow_html=True) 
+                        if st.button(m['title'], key=f"t_{st.session_state.genre_choice}_{r}_{i}", width='stretch', help=m['title']): show_details(m)
                         st.markdown("</div>", unsafe_allow_html=True)
                 
+                # 3단: 시청하기 버튼
                 for i, m in enumerate(batch):
                     with cols[i]:
                         if st.button("▶️ 시청하기", key=f"w_{st.session_state.genre_choice}_{r}_{i}", type="primary", width='stretch'):
