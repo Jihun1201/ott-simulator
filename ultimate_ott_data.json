@@ -13,17 +13,7 @@
         "vote_average": 6.76,
         "category_type": "인기 영화"
     },
-    {
-        "title": "Твоё сердце будет разбито",
-        "overview": "",
-        "genre_ids": [
-            10749,
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
-        "vote_average": 6.93,
-        "category_type": "인기 영화"
-    },
+    
     {
         "title": "아앙: 더 라스트 에어벤더",
         "overview": "",
@@ -539,18 +529,6 @@
         "category_type": "인기 영화"
     },
     {
-        "title": "Il peccato di Lola",
-        "overview": "",
-        "genre_ids": [
-            18,
-            35,
-            27
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/iQt9Kydd8yn9xfBvYeKec56glyv.jpg",
-        "vote_average": 7.007,
-        "category_type": "인기 영화"
-    },
-    {
         "title": "트리플 엑스",
         "overview": "싸이렌이 온 거리를 울려 퍼지며 요란한 추격씬이 벌어지는 도중 한 녀석이 콜벳를 몰고 다리를 돌진, 200미터 높이에서 자동차 번지를 시도한다. 짜릿한 곡예를 선보인 후 낙하산을 펴고 유유히 사라지는 녀석의 이름은 '젠더 케이지'. 인터넷에 생방송된 이 장면은 전세계 네티즌들에게 열렬한 환호를 받는다. 또 한 번의 멋진 프로젝트로 영웅 대접을 받는 젠더 케이지. 그러나 파티가 무르익을 무렵, 갑자기 들이닥친 특수부대는 그에게 신경 안정제를 쏜 후 잠들게 한다. 깨어난 곳은 알 수 없는 레스토랑. 어리둥절한 그 곳은 갑자기 강도들의 침입장으로 돌변하고, 단숨에 상황을 정리해버린 그에게 기븐스가 축하 인사를 전한다. 미국 비밀첩보국 NSA의 1차 테스트를 통과한 것. 이후 또 다시 잠에서 깨어난 곳은 비행기 안. 2번째 테스트로 콜럼비아 마약 밀매상의 아지트에 던져진 젠더 케이지. 때마침 콜럼비아 정부와 마약상들의 충돌로 아수라장이 된 그곳에서 살아남기 위한 치열한 전쟁이 펼쳐지는데...  상황종료 후 유유히 나타난 기븐스는 NSA의 테스트를 유일하게 통과한 그에게 비밀요원이 되어줄 것을 부탁한다. 단 그렇지 않을 경우는 감옥행뿐이라는 단서를 둔다. 젠더 케이지의 코드명은 트리플 X. 첫번째 임무지는 비밀요원의 무덤이라는 별칭을 가지고 있는 도시 프라하. 이제 얼떨결에 비밀요원이 되어버린 트리플 X의 위험한 여정이 시작되는데.",
         "genre_ids": [
@@ -562,27 +540,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/ysmsesGYF83VZXSvkG8ZdNNCKAz.jpg",
         "vote_average": 5.986,
-        "category_type": "인기 영화"
-    },
-    {
-        "title": "\"폭풍의 언덕\"",
-        "overview": "자유를 꿈꾸는 캐서린과 상처 입은 영혼 히스클리프, 서로에게 완전히 빠져든 두 사람의 치명적인 사랑을 담은 이야기",
-        "genre_ids": [
-            10749,
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/oDXVQRHTomnm9N569Pu2d38IubP.jpg",
-        "vote_average": 6.523,
-        "category_type": "인기 영화"
-    },
-    {
-        "title": "무명의 남자",
-        "overview": "내리쬐는 여름 태양 아래, 거센 파도 속에서 돋아나는 사랑. 이 작품에는 여름의 뜨거움과 고요함이 담겨있다. 색감과 노래에서 묻어 나오는 감정들은 영화에 더욱 몰입하게 한다.",
-        "genre_ids": [
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/4TpBhdaSl5ALHbgeaYOLF8Q3haz.jpg",
-        "vote_average": 7.3,
         "category_type": "인기 영화"
     },
     {
@@ -657,16 +614,6 @@
         "category_type": "인기 영화"
     },
     {
-        "title": "Sundutan",
-        "overview": "",
-        "genre_ids": [
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/2neZgVuY7prWIak5hhNKT53Hk0N.jpg",
-        "vote_average": 4.0,
-        "category_type": "인기 영화"
-    },
-    {
         "title": "더 레킹 크루",
         "overview": "'더 레킹 크루'는 사이가 멀어진 이복형제의 이야기를 다룬다. 조니와 제임스는 아버지의 의문스러운 죽음 이후 다시 뭉치게 된다. 진실을 쫓는 과정에서 묻혀 있던 비밀들이 밝혀지고, 가족을 갈라놓을 수 있는 거대한 음모가 드러난다.",
         "genre_ids": [
@@ -677,16 +624,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/bG8BPNRoOvTC9wIos7DIH1YWOqN.jpg",
         "vote_average": 6.876,
-        "category_type": "인기 영화"
-    },
-    {
-        "title": "어린 형수",
-        "overview": "“동갑내기 세 남녀의 위험천만한 동거가 시작된다!”  학교를 다니다 운 좋게 시나리오 공모전에 당선되어 영화화할 시나리오를 써야만 하는 휴학생, 병수(도모세)는 시끄러운 도시를 벗어나 조용히 창작에 몰두할 곳을 찾다가 결혼한 학교 선배의 집으로 들어가게 된다.  유학간 젊은 남편 대신 후배 병수와 함께 한 집에서 지내게 된 섹시한 동갑내기 어린 형수, 지은(시현)과 청순 글래머, 보영(예나).  세 남녀의 한 달간의 동거는 수습불가, 위기일발로 치닫고 마는데...!!",
-        "genre_ids": [
-            10749
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/jAGlDPyNfLvGMXI3Gt9E4SrRtHg.jpg",
-        "vote_average": 6.0,
         "category_type": "인기 영화"
     },
     {
@@ -829,16 +766,6 @@
         "category_type": "한국 드라마"
     },
     {
-        "title": "KBS 드라마 스페셜",
-        "overview": "다양하고 완성도 있는 이야기로 제작된 단편드라마를 담은 프로그램",
-        "genre_ids": [
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/cWCHdWNCExYVug7aD7vTRUrzrfb.jpg",
-        "vote_average": 7.4,
-        "category_type": "한국 드라마"
-    },
-    {
         "title": "경이로운 소문",
         "overview": "명인 포스의 주방 여사 추매옥을 중심으로, 칼자국 깊게 패인 건달 아우라의 주방 보조 가모탁, 반찬은 셀프를 외치는 시니컬한 홀서빙 도하나 그리고 고교생 알바 소문. 대화도 없이 눈빛만으로도 합이 쩍쩍 맞는 국숫집을 운영하는 네 사람의 실제 직업은 슈퍼히어로다. 그들은 죽음의 강을 건너다가 악귀 사냥꾼으로 다시 태어났다. 사람은 살리고, 악귀는 잡는 따뜻한 이웃, 카운터들의 통쾌한 악귀 사냥이 시작된다.",
         "genre_ids": [
@@ -848,17 +775,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/xwXgYXqxLRAYfVGUaS1STEFnmzZ.jpg",
         "vote_average": 8.319,
-        "category_type": "한국 드라마"
-    },
-    {
-        "title": "논스톱",
-        "overview": "문화 대학교의 밴드 동아리인 논스톱 밴드를 주무대로 펼쳐지는 대학생들의 사랑과 우정을 담은 청춘 시트콤 프로그램",
-        "genre_ids": [
-            18,
-            35
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/elXJzhz1dM0lO7fK2BfO2pVtC7l.jpg",
-        "vote_average": 4.4,
         "category_type": "한국 드라마"
     },
     {
@@ -2328,17 +2244,6 @@
         "category_type": "일본 드라마"
     },
     {
-        "title": "절대 BL이 되는 세계 VS 절대 BL이 되고 싶지 않은 남자​",
-        "overview": "자신이 BL 만화 속 등장인물이라는 사실을 눈치챈 주인공. 그는 속속 접근해오는 미남들과의 만남을 회피하기 위해, 대량의 BL 만화를 탐독, 연애로 발전할 법한 시츄에이션 등의 지식을 습득한다. 그가 몸에 익힌 회피능력은 지금 무적에 가깝지만, 이곳은 'BL 세계'…. 속속 등장하는 새로운 시추에이션으로 ' BL 세계'의 연애 플래그가 주인공을 덮쳐오는데...",
-        "genre_ids": [
-            35,
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/2Uj3wmu063NdsgOpFibBrDjVJgz.jpg",
-        "vote_average": 6.7,
-        "category_type": "일본 드라마"
-    },
-    {
         "title": "そんな家族なら捨てちゃえば？",
         "overview": "",
         "genre_ids": [
@@ -2443,16 +2348,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/lfPg2GC0FgZ63xghEmAWPRL3cp4.jpg",
         "vote_average": 7.0,
-        "category_type": "일본 드라마"
-    },
-    {
-        "title": "부부 원만 레시피 ~교환하지 않을래? 하룻밤만~",
-        "overview": "한 아이의 어머니로 라이터를 하면서 육아를 하고 있는 니시나 시호는, 남편·니시나 코스케와의 섹스리스에 고민하고 있었다. 고스케 또한 시호를 사랑하는데 아내만 ED\"가 되어버린 것에 대해 고민하고 있었다. 어느 날 시호는 고스케로부터 '부부 교환 파티'에 갈 것을 제안받는다. 처음에는 생소한 행사에 강한 거부감을 느끼고 있던 시호였지만 거듭된 고스케의 설득에 뿌리를 내렸다. 견학뿐이라면 나이트 아쿠아리움이라는 부부 교환 파티에 참석한다. 처음에는 경계심을 감추지 못했던 시호였지만 점차 부부 교환을 하는 것에 장점을 느끼기 시작했고...",
-        "genre_ids": [
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/dpeFCeDItnHpZG63kgmesugJg2y.jpg",
-        "vote_average": 6.7,
         "category_type": "일본 드라마"
     },
     {
@@ -2698,16 +2593,6 @@
         "category_type": "일본 드라마"
     },
     {
-        "title": "롱 베케이션",
-        "overview": "오늘 결혼할 예정인 신부 미나미는 정신없이 거리를 내달려 신랑 아사쿠라의 집을 찾는다. 그러나 그곳에서 그녀를 기다리는 것은 아사쿠라가 아닌 그의 룸메이트 세나와 아사쿠라가 남긴 이별을 고하는 편지 한 통 뿐이었다. 결혼식 당일에 신랑에게 차여버려 갈 곳도 없는 그녀는 세나가 살고 있는 집에서 아사쿠라를 기다린다는 명목하에 눌러앉기로 하는데...",
-        "genre_ids": [
-            18
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/rPIiPOdhy6FqzhQqgSflJ36jSDI.jpg",
-        "vote_average": 8.6,
-        "category_type": "일본 드라마"
-    },
-    {
         "title": "의붓엄마와 딸의 블루스",
         "overview": "누구보다 일을 사랑하는 주인공이 경쟁회사에서 근무하는 8살짜리 딸을 둔 남자와 결혼을 하게 되면서 일어나는 이야기를 그린 드라마",
         "genre_ids": [
@@ -2739,27 +2624,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/pnn223i9v5kfYku6TbqdSbPePJp.jpg",
         "vote_average": 8.558,
-        "category_type": "일본 애니메이션"
-    },
-    {
-        "title": "오버플로우",
-        "overview": "\"오빠, 정말 같이 목욕하는 거야...?\"\n\n우연한 기회에 시작된 금지된 목욕 체험!\n\n친한 자매와 어린 시절 친구인 오빠,\n\n남녀 3명이 욕조에 어깨까지 담그면\n\n무심코 흘러나온 것은... 자매의 숨겨둔 사랑!\n\n오버라고 말하지 말자,\n\n실물 크기의 청춘 러브 코미디!",
-        "genre_ids": [
-            16
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
-        "vote_average": 7.346,
-        "category_type": "일본 애니메이션"
-    },
-    {
-        "title": "그녀도 여친",
-        "overview": "주인공 나오야는 고등학교 1학년. 쭉 좋아했던 사키에게 고백해, 여자친구가 되도록 성공. 행복의 절정에 있었다.\n\n그러나, 그런 나오야에게 미소녀 나기사가 말을 건다. 그녀는 다짜고짜 나오야에게 좋아한다고 고백을 하는 것이었다. 너무나 좋은 사람에게 마음이 흔들리는 나오야는, 어떤 결정을 한다...!!\n\n설마 한 선택으로부터 시작되는 네오 스탠다드 러브 코미디!!",
-        "genre_ids": [
-            16,
-            35
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/713nc2KmLrj0WEboziZhsSG9lGZ.jpg",
-        "vote_average": 7.1,
         "category_type": "일본 애니메이션"
     },
     {
@@ -2822,16 +2686,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/vaXQOBNdQVtxUMN96cR4qQRxmoQ.jpg",
         "vote_average": 7.965,
-        "category_type": "일본 애니메이션"
-    },
-    {
-        "title": "미안해 ,아담군",
-        "overview": "팬데믹으로 전 인류가 ED가 된 세상, 남학생 이츠키는 유일하게 ED를 피한 특별한 존재였다. 들키면 평생 기니피그 생활... 그런 건 싫다! 비밀을 지키기 위해 전학 간 곳은 설마 여자들만 있는 하렘 학원? 친절하고 상냥한 선배, 욕구불만 여교사, 학원의 왕자님, 재벌가의 아가씨, 어떤 여자라도 사로잡을 수 있는 이치키는 과연 어떤 여자를 선택하게 될까?",
-        "genre_ids": [
-            16
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
-        "vote_average": 6.7,
         "category_type": "일본 애니메이션"
     },
     {
@@ -3005,16 +2859,6 @@
         "category_type": "일본 애니메이션"
     },
     {
-        "title": "천장에서 떨어진 그녀 ~2층에서 여자가 떨어졌다!?~",
-        "overview": "고물 아파트에 사는 나의 유일한 위안은 미인 집주인과 귀여운 2층 아이. 그러던 어느날, 천장이 삐걱거리는 소리가 나고… 뚝! 하고 밑바닥이 빠져 내 바로 위에 2층의 그 아이가 내려온다…!? 기적의 에로 해프닝으로, 우연히 연결되는 마음과 몸. 그리고, 왠지 시작되는 미녀 2명과의 공동생활!? 그리고 한지붕아래, 너무 농밀한 삼각관계의 앞날은...!?",
-        "genre_ids": [
-            16
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/7x8x6dl4leOSw6KGUcOrQew7Eua.jpg",
-        "vote_average": 7.3,
-        "category_type": "일본 애니메이션"
-    },
-    {
         "title": "포켓몬스터",
         "overview": "라이징 볼트태클즈에 가입한 신예 포켓몬 트레이너 리코와 로드. 베일에 싸인 조직, 익스플로러즈의 음모를 막으며 포켓몬의 세계에서 종횡무진 모험을 펼친다.",
         "genre_ids": [
@@ -3050,16 +2894,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/qHjXsSUuolEtbgvYPzRjAuB1VHE.jpg",
         "vote_average": 8.7,
-        "category_type": "일본 애니메이션"
-    },
-    {
-        "title": "시크릿미션 ~잠입수사관은 절대 지지 않는다!~",
-        "overview": "마토리의 라이토 리코는 후배인 노마와 함께 범죄 조직의 아지트인 아파트에 잠입 중이다.\n\n신혼부부로 위장하고 있던 두 사람은 밤의 생활소리가 들리지 않는 것을 범인에게 의심받는다.\n\n그러자 노마가 사랑하는 부부라고 생각하게 하기 위해 이코의 몸을 만지기 시작하는데..",
-        "genre_ids": [
-            16
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/ipqu76qqHiVB2vlK2gGZNwF9SwX.jpg",
-        "vote_average": 6.1,
         "category_type": "일본 애니메이션"
     },
     {
@@ -3100,17 +2934,6 @@
         "category_type": "일본 애니메이션"
     },
     {
-        "title": "북두의 권 -Fist of the North Star-",
-        "overview": "199X년, 세계는 핵의 불길에 휩싸였다! 바다는 마르고 땅은 갈라져 모든 생명이 절멸한 듯했으나, 인류는 멸망하지 않았다! 하지만 황폐해진 대지 위 생존하려는 이들의 염원은 무자비한 폭력 앞에 철저히 짓밟힌다. 오직 힘만이 정의가 되고 약자는 유린당하는 절망의 시대. 그곳에 가슴에 일곱 개의 흉터를 지닌 전설의 암살권 '북두신권' 전승자 켄시로가 나타난다. 약혼자 유리아를 빼앗은 숙적 신을 쫓아 끝없는 황야를 방랑하는 그는, 야망과 욕망을 드러내는 세기말의 강자들에 맞서 싸운다. 약탈과 살육이 소용돌이치는 미친 세상. 켄시로는 억압받는 자들의 외침에 응답하며, 기도조차 닿지 않는 난세를 오직 그 주먹 하나로 개척해 나간다! ©부론손·하라 테츠오 / 코어믹스, 「북두의 권」 제작위원회",
-        "genre_ids": [
-            10759,
-            16
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/jjpJNuMit5K0IDXVcnxJV60oZS5.jpg",
-        "vote_average": 9.0,
-        "category_type": "일본 애니메이션"
-    },
-    {
         "title": "괴수 8호",
         "overview": "일상적으로 괴수가 사람들을 위협하는 세계. 괴수를 토벌하는 「일본 방위대」 입대를 지망하던 히비노 카프카는, 언제부턴가 그 꿈을 포기하고 괴수 전문 청소업자로서 일하고 있었다. 「둘이서 괴수를 전멸시키자」 어린 시절 그렇게 함께 맹세한 소꿉친구 아시로 미나가 제3부대 대장으로서 각광을 받고 있는 가운데, 그녀와 함께 싸울 수 없는 카프카는 자신이 한심하게 느껴졌다. 하지만, 방위대에 입대하려는 이치카와 레노와의 만남을 계기로 멈춰있던 카프카의 시간이 다시 움직이기 시작하는데..!...",
         "genre_ids": [
@@ -3120,17 +2943,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/wBsGdFsrD9CL8xRphidx60EmgBE.jpg",
         "vote_average": 8.44,
-        "category_type": "일본 애니메이션"
-    },
-    {
-        "title": "손끝에서부터 진심의 열정 -소꿉친구는 소방관-",
-        "overview": "소꿉친구였던 소방사 소마에게 미팅의 제의를 받게 된 료.\n\n이런 싼티남은 연애대상밖.\n\n그런 어느날 맨션에 불이 나게 되면서 소마의 방에 얹혀살게 되는 경우가!\n\n한 방의 안에서, 경계하며 거리를 유지해나가기도 하며...\n\n화재로써 구해지게 되었을 때의 상처를 보고 마음을 돌리게 되기도.\n\n이 녀석은 그저 소꿉친구일뿐이었는데.\n\n처음 보는 뜨거운 눈매로, 더는 거부할 수 없어.",
-        "genre_ids": [
-            35,
-            16
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/yHUDRf2e9FGeWXPsT5lVF3iCUwc.jpg",
-        "vote_average": 6.905,
         "category_type": "일본 애니메이션"
     },
     {
@@ -3266,17 +3078,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/krBHtLnl6zLSmriYp8f7lpLlIoG.jpg",
         "vote_average": 8.504,
-        "category_type": "일본 애니메이션"
-    },
-    {
-        "title": "너무 야한 후카미군",
-        "overview": "“나처럼 완벽한 남자가… 어떻게 그런 평범한 남자한테 흥분할 수가 있어?!”잘생긴 외모와 넘치는 매력으로 모든 사무실 동료의 인기를 한 몸에 받는 카지. 하지만 그는 속으로 다른 사람들을 은근히 낮잡아보며, 자신만의 기준으로 점수를 매기는 남자다.그러던 어느 날, 카지는 눈에 잘 띄지 않던 기술부 직원, 후카미와 하룻밤 출장을 가게 된다. 평범해 보이는 후카미에게 깊은 인상을 받지 못한 카지. 하지만 샤워를 마치고 나온 후카미의 모습은, 거부할 수 없을 정도로 매력적이었다…!?",
-        "genre_ids": [
-            16,
-            35
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/okgjwAfeSZkKbcxj5NuGAGMPd5D.jpg",
-        "vote_average": 5.9,
         "category_type": "일본 애니메이션"
     },
     {
@@ -3780,16 +3581,6 @@
         "category_type": "한국 예능"
     },
     {
-        "title": "야심만만",
-        "overview": "다양한 주제의 설문조사 답변 내용을 스튜디오에 나온 게스트들이 맞춰가는 프로그램",
-        "genre_ids": [
-            10767
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/s2jKv5sKnyMAuGet6anwJnScq36.jpg",
-        "vote_average": 0.0,
-        "category_type": "한국 예능"
-    },
-    {
         "title": "흑백요리사: 요리 계급 전쟁",
         "overview": "경력과 장르를 가리지 않는다. 그저 요리만 잘하면 된다. 레스토랑 셰프부터 방구석 요리왕까지, 맛에 일가견이 있는 사람들의 경쟁. 그 어디에서도 볼 수 없던 치열한 요리 대결이 시작된다.",
         "genre_ids": [
@@ -3797,17 +3588,6 @@
         ],
         "poster_path": "https://image.tmdb.org/t/p/w500/tsEIrmV6SIbEVqPZimWqXGvbFcw.jpg",
         "vote_average": 8.413,
-        "category_type": "한국 예능"
-    },
-    {
-        "title": "색녀도",
-        "overview": "에로배우들이 나와서 무인도에서 게임을 하면서\n\n서로 지지고 볶고 싸우고 난리치면서\n\n거기에 전부 누드 즉 다 벗고 하는 섹시방송입니다.\n\n저는 색녀도 에로배우들중에서 수지가 가장 괜찮더군요\n\n몸매랑 미모가 딱 제 스타일이더라고요\n\n색녀도는 여자들끼리 모여서 하는거라서\n\n더 치열한것 같으니 한번 보시는것도 괜찮으실꺼예요",
-        "genre_ids": [
-            10764,
-            35
-        ],
-        "poster_path": "https://image.tmdb.org/t/p/w500/rXdgS0wUXrjNQRvuDn5O00SIxi9.jpg",
-        "vote_average": 9.5,
         "category_type": "한국 예능"
     },
     {
@@ -3973,7 +3753,7 @@
         "genre_ids": [
             10767
         ],
-        "poster_path": null,
+        "poster_path": https://x.com/mujin_plz,
         "vote_average": 8.5,
         "category_type": "한국 예능"
     },
