@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import heapq
 
-# --- 레이아웃 및 CSS 설정 (여기가 핵심입니다!) ---
+# --- 레이아웃 및 CSS 설정 ---
 st.set_page_config(layout="wide", page_title="OTT Simulator")
 
 st.markdown("""
@@ -69,26 +69,36 @@ def show_details(movie):
     if st.button("닫기", width='stretch'):
         st.rerun()
 
-# --- 로직 함수 ---
+# --- 로직 함수 (동기화 버그 완벽 수정) ---
 def watch_content(movie, user_data):
+    # 중복 시청 방지
     user_data['history'] = [m for m in user_data['history'] if m['title'] != movie['title']]
     user_data['history'].insert(0, movie) 
+    
+    # 장르 가중치 증가 (+10)
     for genre_id in movie.get('genre_ids', []):
         genre_name = GENRE_MAP.get(genre_id, "기타")
         user_data['genre_weights'][genre_name] = user_data['genre_weights'].get(genre_name, 0) + 10
     st.toast(f"✅ 시청 완료: {movie['title']}")
 
 def remove_history(movie_title, user_data):
-    for i, m in enumerate(user_data['history']):
-        if m['title'] == movie_title:
-            for genre_id in m.get('genre_ids', []):
-                genre_name = GENRE_MAP.get(genre_id, "기타")
-                if genre_name in user_data['genre_weights']:
-                    user_data['genre_weights'][genre_name] -= 10
-                    if user_data['genre_weights'][genre_name] <= 0:
-                        del user_data['genre_weights'][genre_name]
-            user_data['history'].pop(i)
-            break
+    # 1. 삭제할 객체 찾기
+    target_movie = next((m for m in user_data['history'] if m['title'] == movie_title), None)
+    
+    if target_movie:
+        # 2. 장르 점수 차감
+        for genre_id in target_movie.get('genre_ids', []):
+            genre_name = GENRE_MAP.get(genre_id, "기타")
+            if genre_name in user_data['genre_weights']:
+                user_data['genre_weights'][genre_name] -= 10
+                # 0점 이하 삭제 (트리 동기화)
+                if user_data['genre_weights'][genre_name] <= 0:
+                    del user_data['genre_weights'][genre_name]
+        
+        # 3. 리스트에서 제거
+        user_data['history'] = [m for m in user_data['history'] if m['title'] != movie_title]
+        
+    st.toast(f"🗑️ 기록 삭제됨: {movie_title}")
     st.rerun()
 
 def get_pq(user_data):
@@ -100,8 +110,7 @@ def get_pq(user_data):
         if score > 0: heapq.heappush(pq, (-score, idx, movie))
     return pq
 
-
-# 사이드바
+# --- 사이드바 (실수로 지워졌던 부분 복구!) ---
 st.sidebar.title("🎬 설정")
 selected_user = st.sidebar.selectbox("👤 사용자", list(st.session_state.users.keys()))
 user_data = st.session_state.users[selected_user]
@@ -144,7 +153,7 @@ with (col_dash if not zoom_mode else st.container()):
             # 1단: 이미지
             for i, m in enumerate(top_5):
                 with t_cols[i]: st.markdown(f"<div style='height: 160px;'><img src='{m['poster_path']}' style='width:100%; height:100%; object-fit:cover; border-radius:5px;'></div>", unsafe_allow_html=True)
-            # 2단: 제목 버튼 (CSS 덕분에 원래 제목 그대로 넣어도 알아서 1줄로 잘립니다)
+            # 2단: 제목 버튼
             for i, m in enumerate(top_5):
                 with t_cols[i]:
                     st.markdown("<div style='margin-top: 5px;'>", unsafe_allow_html=True)
@@ -174,7 +183,6 @@ with (col_dash if not zoom_mode else st.container()):
             dot_q = 'digraph Q { node [shape=ellipse, style=filled, fillcolor="#d6eaf8"];'
             for i in range(min(15, len(pq))):
                 s, _, m = pq[i]
-                # 큐 안의 라벨도 깔끔하게 자르기 (이건 스트림릿 버튼이 아니라 그래프라 수동 처리)
                 short_t = m['title'][:8] + ".." if len(m['title']) > 8 else m['title']
                 dot_q += f'{i} [label="{-s}점\\n{short_t}"];'
                 if i > 0: dot_q += f'{(i-1)//2} -> {i};'
@@ -199,6 +207,7 @@ if not zoom_mode:
                 batch = display_list[r*3 : r*3+3]
                 if not batch: continue
                 cols = st.columns(3)
+                
                 # 1단: 이미지
                 for i, m in enumerate(batch):
                     with cols[i]: st.markdown(f"<div style='height: 320px;'><img src='{m['poster_path']}' style='width:100%; height:100%; object-fit:cover; border-radius:5px;'></div>", unsafe_allow_html=True)
