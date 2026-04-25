@@ -38,9 +38,17 @@ def load_data():
 movies, categorized_movies = load_data()
 
 # --- 💡 말줄임표 처리 함수 추가 ---
+# --- 💡 말줄임표 및 버튼 높이 강제 고정 함수 ---
 def shorten_title(text, max_len=10):
-    """제목이 지정된 길이보다 길면 ... 으로 자릅니다."""
-    return text[:max_len] + "..." if len(text) > max_len else text
+    """제목이 길면 자르고, 짧으면 투명한 줄바꿈을 넣어 버튼 높이를 2줄로 강제 고정합니다."""
+    if len(text) > max_len:
+        return text[:max_len] + "..."
+    elif len(text) <= 8: 
+        # 8글자 이하라 1줄로 표시될 것 같은 제목들은 강제로 2줄로 만듭니다.
+        # 주의: \n 뒤에 있는 공백은 일반 띄어쓰기가 아니라 투명한 특수문자(U+3164)입니다! 절대 지우지 마세요.
+        return text + "\nㅤ" 
+    else:
+        return text
 
 # --- 상세 정보 팝업 ---
 @st.dialog("📋 콘텐츠 상세 정보", width="large")
